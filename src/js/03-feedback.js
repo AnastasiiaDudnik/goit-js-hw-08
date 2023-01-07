@@ -6,7 +6,7 @@ console.dir(form);
 const formData = {};
 const STORAGE_KEY = 'feedback-form-state';
 
-form.addEventListener('input', throttle(onFormInput, 250));
+form.addEventListener('input', throttle(onFormInput, 500));
 form.addEventListener('submit', onFormSubmit);
 
 function onFormInput(event) {
