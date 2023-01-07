@@ -28,8 +28,8 @@ function textareaFill() {
   if (parsedInput) {
     console.log(parsedInput);
 
-    form.textarea = parsedInput.message;
-    form.input = parsedInput.email;
+    form.elements.message.value = parsedInput.message;
+    form.elements.email.value = parsedInput.email;
   }
 }
 
